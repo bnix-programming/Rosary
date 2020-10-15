@@ -2,13 +2,13 @@
         font-family: 'Times New Roman', Times, serif;
         margin: 0;
         width: 100%;
-        background-color: rgb(255, 245, 230);
+        background-color: #706767;
     }
 
     h1 {
         text-transform: capitalize;
         font-size: 50px;
-        background: rgb(228, 204, 100);
+        background: #b11111;
     }
 
     h2 {
@@ -21,6 +21,10 @@
         margin: 0 4%;
     }
 
+    h3, h2 {
+        color: white;
+    }
+
     #header-text {
         color: white;
         padding: 15px;
@@ -31,7 +35,7 @@
     #nav {
         z-index: 2;
         overflow: hidden;
-        background-color: rgb(119, 88, 60);
+        background-color: #262626;
     }
 
     #nav a {
@@ -47,11 +51,11 @@
     }
 
     #nav a:hover {
-        background-color: rgba(255, 209, 139, 0.644);
+        background-color: #8a4b4b;
     }
 
     #nav a.active {
-        background-color: rgb(228, 204, 100);
+        background-color: #b11111;
         color: white;
     }
 
@@ -89,7 +93,7 @@
     }
 
     .button {
-        background-color: rgb(243, 229, 182);
+        background-color: #b11111;
         align-self: center;
         width: 100%;
         text-align: left;
@@ -104,15 +108,14 @@
     }
 
     .tooltip .tooltip-text {
-        margin: 0 5%;
+        margin: 5%;
         visibility: hidden;
-        width: 90%;
-        background-color: rgb(90, 63, 40);
+        background-color: #4b0d0d;
         color: #fff;
         text-align: center;
         border-radius: 6px;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 125%;
         opacity: 0;
         transition: opacity 0.3s;
@@ -134,10 +137,11 @@
 
     .citation-block {
         text-align: right;
+        color: white;
     }
 
     .citation-break {
-        background-color: rgb(119, 88, 60);
+        background-color: white;
         border-width: 0;
         height: 1px;
         width: 25%;
@@ -147,11 +151,11 @@
     .dropdown-master {
         cursor: pointer;
         border-style: solid;
-        border-color: rgb(119, 88, 60);
+        border-color: #630909;
     }
 
     .dropdown-active, .button:hover {
-        background-color: rgb(236, 213, 136);
+        background-color: #961616;
     }
 
     .dropdown-slave {
@@ -163,12 +167,12 @@
 
     .dropdown-box {
         padding: 16px;
-        background: rgba(148, 97, 53, 0.596);
+        background: #7c0707;
         margin: none;
     }
 
     .passage {
         font-style: italic;
         border-radius: 50px;
-        background-color: rgb(185, 127, 76);
+        background-color: #a84141;
     }
