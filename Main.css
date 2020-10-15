@@ -109,7 +109,7 @@
 
     .tooltip .tooltip-text {
         left: -14px;
-        margin: 5%;
+        margin: 0 5%;
         visibility: hidden;
         background-color: #4b0d0d;
         color: #fff;
