@@ -2097,7 +2097,7 @@
             var mary = document.getElementById("mary-checkbox");
             var loop = document.getElementsByClassName("mary");
             var a;
-            var par;
+            var par = document.getElementsByClassName("dropdown-active");
             for (a = 0; a < loop.length; a++){
                 if ( mary.checked == false ) {
                     loop[a].style.visibility = "hidden";
@@ -2106,8 +2106,15 @@
                 else {
                     loop[a].style.visibility = "visible";
                     loop[a].style.height = "initial";
-                    par = loop[a].parentElement;
-                    par.style.maxHeight = content.scrollHeight + "px";
+                }
+            }
+            for (b = 0; b < par.length; b++){
+                if (par[b].style.maxHeight) {
+                    par[b].style.overflow = "hidden";
+                    par[b].style.maxHeight = null;
+                } else {
+                    par[b].style.maxHeight = par[b].scrollHeight + "px";
+                    par[b].style.overflow = "visible";
                 }
             }
         }
