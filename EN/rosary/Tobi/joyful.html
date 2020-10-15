@@ -2092,6 +2092,26 @@
         }
         /*End nav function calls*/
 
+
+        function maryfunc() {
+            var mary = document.getElementById("mary-checkbox");
+            var loop = document.getElementsByClassName("mary");
+            var a;
+            var par;
+            for (a = 0; a < loop.length; a++){
+                if ( mary.checked == false ) {
+                    loop[a].style.visibility = "hidden";
+                    loop[a].style.height = "0";
+                }
+                else {
+                    loop[a].style.visibility = "visible";
+                    loop[a].style.height = "initial";
+                    par = loop[a].parentElement;
+                    par.style.maxHeight = content.scrollHeight + "px";
+                }
+            }
+        }
+
         /*Begin collapsable function calls*/
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function () {
@@ -2107,22 +2127,6 @@
             });
         }
         /*End collapsable function calls*/
-
-        function maryfunc() {
-            var mary = document.getElementById("mary-checkbox");
-            var loop = document.getElementsByClassName("mary");
-            var a;
-            for (a = 0; a < loop.length; a++){
-                if ( mary.checked == false ) {
-                    loop[a].style.visibility = "hidden";
-                    loop[a].style.height = "0";
-                }
-                else {
-                    loop[a].style.visibility = "visible";
-                    loop[a].style.height = "initial";
-                }
-            }
-        }
     </script>
 </body>
 
