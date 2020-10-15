@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MBV-D: Rosary Guide - About</title>
+    <link rel="stylesheet" type="text/css" href="../Main.css" media="screen">
+</head>
+
+<body>
+    <h1 class="header" id="header-text">
+        MBV&#39;s Discord: Rosary guide
+    </h1>
+    <div id="nav">
+        <a href="home.html">Home</a>
+        <a class="active" href="rosary-index.html">Rosary index</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="body">
+        <h2>
+            <b>Mysteries</b>
+        </h2>
+        <button class='button dropdown-master' onclick="document.location='rosary/Tobi/joyful.html'" >
+            <h3>
+                Joyful
+            </h3>
+        </button>
+    </div>
+
+
+    <script>
+        window.onscroll = function () { stick() };
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function stick() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+
+        function weekDay() {
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay(0)];
+            document.getElementById("week-day").innerHTML = n;
+        } 
+    </script>
+</body>
+
+</html>
