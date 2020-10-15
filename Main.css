@@ -178,3 +178,8 @@
         border-radius: 50px;
         background-color: #a84141;
     }
+
+    .mary {
+        visibility: hidden;
+        height: 0;
+    }
