@@ -164,7 +164,6 @@
         max-height: 0px;
         overflow: hidden;
         padding: 0;
-        transition: max-height;
     }
 
     .dropdown-box {
