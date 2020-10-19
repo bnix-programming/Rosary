@@ -5583,13 +5583,9 @@
                 }
             }
             for (b = 0; b < par.length; b++){
-                if (par[b].style.maxHeight) {
                     par[b].style.overflow = "hidden";
                     par[b].style.maxHeight = null;
-                } else {
-                    par[b].style.maxHeight = par[b].scrollHeight + "px";
-                    par[b].style.overflow = "visible";
-                }
+                    par[b].classList.toggle("dropdown-active");
             }
         }
 
