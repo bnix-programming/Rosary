@@ -64,8 +64,8 @@
                     <label class="fcol-label" for="montfort">Montfort:</label><br>
                     <div class="inner">
                         <div>
-                            <label><input type="radio" name="montfort" value="on">On</label><br>
-                            <label><input type="radio" name="montfort" value="off" checked>Off</label>    
+                            <label><input type="radio" name="montfort" value="on" id="mont-on">On</label><br>
+                            <label><input type="radio" name="montfort" value="off" id="mont-off" checked>Off</label>    
                         </div>
                     </div>
                 </div>
@@ -85,11 +85,14 @@
             </div>
         </form>
         <br>
-
-        <span class="mystery" id="joyful"></span>
-        <span class="mystery" id="luminous"></span>
-        <span class="mystery" id="sorrowful"></span>
-        <span class="mystery" id="glorious"></span>
+        <span class="rosary">
+            <span class="perpetual" id="opening"></span>
+            <span class="mystery" id="joyful"></span>
+            <span class="mystery" id="luminous"></span>
+            <span class="mystery" id="sorrowful"></span>
+            <span class="mystery" id="glorious"></span>
+            <span class="perpetual" id="ending"></span>
+        </span>
     </div>
     <br>
 
@@ -116,6 +119,8 @@
         urlp=[];
         u=location.search.replace("?","").split("&").forEach(function(d){e=d.split("=");if(urlp[e[0]]==undefined){urlp[e[0]]=e[1]}else{urlp[e[0]]=urlp[e[0]]+" "+e[1]}});
         document.getElementById(urlp["version"]).checked = true ;
+        var cMont = 1
+
         if (urlp["mystery"]!=undefined){
             var aMysteries = urlp["mystery"].split(" ");
         }
@@ -129,7 +134,8 @@
                     vDrop = vDrop + "<span class=\"catechism\">" + catechism[sMystery][n] + "</span>"
                 }
                 if (urlp["montfort"]=="on") {
-                    vDrop = vDrop + "<span class=\"montfort\">" + montfort[sMystery][n] + "</span>"
+                    vDrop = vDrop + "<span class=\"montfort\">We offer Thee, O Lord Jesus, this " + master["order"][cMont] + master["montfort"][sMystery]["opening"][n] + "</span>"
+                    cMont++
                 }
                 vDrop = vDrop + "<span class=\"father\">" + tFather + "</span>"
                 if (sVersion!="trad"||urlp["mary"]=="on") {
@@ -141,6 +147,9 @@
                             vDrop = vDrop + "<span class=\"mary\">" + tMary + "</span>";
                         }
                     }
+                }
+                if (urlp["montfort"]=="on"){
+                    vDrop = vDrop + "<span class=\"montfort\">" + master["montfort"][sMystery]["closing"][n] + "</span>"
                 }
                 vDrop = vDrop + "</div><br>"
                 vMystery.innerHTML = vMystery.innerHTML + vDrop
@@ -220,11 +229,28 @@
                 document.getElementById("CCC-off").checked = true
             }
         }
+
+        function fMontfort() {
+            if (urlp["montfort"]=="on"){
+                var aMont = document.getElementsByClassName("montfort")
+                document.getElementById("mont-on").checked = true    
+
+                for (i=0; i<aMont.length; i++) { 
+                    aMont[i].style.visibility = "inherit"
+                    aMont[i].style.marginBottom = "1em"
+                    aMont[i].style.padding = "0.5em 1.5em"
+                }
+            }
+            else {
+                document.getElementById("mont-off").checked = true
+            }
+        }
         
 
         fMystery();
         version()
         fCatechism()
+        fMontfort()
         fMary()
         // End of visibility calls
 

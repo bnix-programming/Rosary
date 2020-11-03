@@ -41,6 +41,56 @@ var master = {
         3: "The Third Glorious Mystery: The Descent of the Holy Spirit (Gifts of the Holy Spirit)",
         4: "The Fourth Glorious Mystery: The Assumption (Devotion to Mary)",
         5: "The Fifth Glorious Mystery: The Coronation of the B.V.M. (Eternal Happiness)"
+    },
+    montfort: {
+        joyful:{
+            opening:{
+                1: " decade in honor of Thine Incarnation in Mary's womb, and we ask of Thee, through this Mystery and through her intercession, a profound humility. Amen.",
+                2: " decade in honor of the Visitation of Thy holy Mother to her cousin St. Elizabeth and the sanctification of St. John the Baptist, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, charity toward our neighbor. Amen.",
+                3: " decade in honor of Thy Nativity in the stable of Bethlehem, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, detachment from the things of the world, contempt of riches and love of poverty. Amen.",
+                4: " decade in honor of Thy Presentation in the Temple and the Purification of Mary, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, purity of body and soul. Amen.",
+                5: " decade in honor of Mary's finding Thee in the Temple, and we ask of Thee, through this Mystery and through her intercession, the gift of true wisdom. Amen."
+            },
+            closing:{
+                1: "May the grace of the Mystery of the Annunciation come down into our souls. Amen.",
+                2: "May the grace of the Mystery of the Visitation come down into our souls. Amen.",
+                3: "May the grace of the Mystery of the Nativity come down into our souls. Amen.",
+                4: "May the grace of the Mystery of the Presentation in the Temple come down into our souls. Amen.",
+                5: "May the grace of the Mystery of the Finding of Our Lord in the Temple come down into our souls. Amen."
+            }
+        },
+        sorrowful:{
+            opening:{
+                1: " decade in honor of Thine Agony in the Garden of Olives, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, contrition for our sins. Amen.",
+                2: " decade in honor of Thy bloody Scourging, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, the grace of mortifying our senses. Amen.",
+                3: " decade in honor of Thy being crowned with thorns, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, contempt of the world. Amen.",
+                4: " decade in honor of Thy carrying of the Cross, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, patience in bearing our crosses. Amen.",
+                5: " decade in honor of Thy Crucifixion and ignominious death on Calvary and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, the conversion of sinners, the perseverance of the just and the relief of the souls in Purgatory. Amen."
+            },
+            closing:{
+                1: "May the grace of the Mystery of the Agony in the Garden come down into our souls. Amen.",
+                2: "May the grace of the Mystery of the Scourging at the Pillar come down into our souls. Amen.",
+                3: "May the grace of the Mystery of the Crowning with Thorns come down into our souls. Amen.",
+                4: "May the grace of the Mystery of the Carrying of the Cross come down into our souls. Amen.",
+                5: "May the grace of the Mystery of the Crucifixion come down into our souls. Amen."
+            }
+        },
+        glorious:{
+            opening:{
+                1: " decade in honor of Thy glorious Resurrection, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, love of God and fervor in Thy service. Amen.",
+                2: " decade in honor of Thy triumphant Ascension, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, an ardent desire for Heaven, our true home. Amen.",
+                3: " decade in honor of the Mystery of Pentecost, and we ask of Thee, through this Mystery and through the intercession of Thy holy Mother, the coming of the Holy Spirit into our souls. Amen.",
+                4: " decade in honor of the resurrection and triumphant Assumption of Thy holy Mother into Heaven, and we ask of Thee, through this Mystery and through her intercession, a tender devotion for so good a Mother. Amen.",
+                5: " decade in honor of the Coronation of Thy holy Mother, and we ask of Thee, through this Mystery and through her intercession, perseverance in grace and a crown of glory hereafter. Amen."
+            },
+            closing:{
+                1: "May the grace of the Mystery of the Resurrection come down into our souls. Amen.",
+                2: "May the grace of the Mystery of the Ascension come down into our souls. Amen.",
+                3: "May the grace of the Mystery of Pentecost come down into our souls. Amen.",
+                4: "May the grace of the Mystery of the Assumption come down into our souls. Amen.",
+                5: "May the grace of the Mystery of the Coronation of the Blessed Virgin come down into our souls. Amen."
+            }
+        }
     }
 }
 
