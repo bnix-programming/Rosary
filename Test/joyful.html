@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MBV-D: Rosary Guide - Joyful</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.png">
+    <script src="verses.js" type="text/javascript"></script>
+    <script src="prayers.js" type="text/javascript"></script>
+    <script src="montfort.js" type="text/javascript"></script>
+    <script src="catechism.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 class="header" id="header-text">
+        MBV's Discord: Rosary guide
+    </h1>
+    <div id="nav">
+        <a href="../../home.html">Home</a>
+        <a class="active" href="../../rosary-index.html">Rosary index</a>
+        <a href="../../changelog.html">Changelog</a>
+        <a href="../../about.html">About</a>
+    </div>
+    <div class="body">
+        <h2>
+            <b>Rosary Guide: Joyful Mysteries</b>
+        </h2>
+        <!--Query form for other rosary types-->
+        <form class="cform" action="joyful.html" method="get">
+            <div class="fcol">
+                <div>
+                    <label class="fcol-label" for="version">Version:</label>    
+                    <div class="inner">
+                        <div>
+                            <label><input type="radio" name="version" value="trad" id="trad" checked>Traditional</label><br>
+                            <label><input type="radio" name="version" value="focus" id="focus">Focused</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="version" value="DRA" id="DRA"><abbr title="Douay-Rheims American Version">DRA</abbr></label><br>
+                            <!-- <label><input type="radio" name="version" id="NIV"><abbr title="New International Version">NIV</abbr></label> -->
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="fcol-label" for="mary">Hail Mary:</label><br>
+                    <div class="inner">
+                        <div>
+                            <label><input type="radio" name="mary" value="on" id="mary-on">On</label><br>
+                            <label><input type="radio" name="mary" value="off" id="mary-off" checked>Off</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="fcol-label" for="CCC">Catechism:</label><br>
+                    <div class="inner">
+                        <div>
+                            <label><input type="radio" name="CCC" value="on" id="CCC-on">On</label><br>
+                            <label><input type="radio" name="CCC" value="off" id="CCC-off" checked>Off</label>  
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="fcol-label" for="montfort">Montfort:</label><br>
+                    <div class="inner">
+                        <div>
+                            <label><input type="radio" name="montfort" value="on">On</label><br>
+                            <label><input type="radio" name="montfort" value="off" checked>Off</label>    
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="fcol-label" for="mysteries">Mysteries:</label><br>
+                    <div class="inner">
+                        <div>
+                            <label><input type="checkbox" name="mystery" value="joyful" id="check-joyful">Joyful</label><br>
+                            <label><input type="checkbox" name="mystery" value="sorrowful" id="check-sorrowful">Sorrowful</label><br>
+                            <label><input type="checkbox" name="mystery" value="glorious" id="check-glorious">Glorious</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fsub">
+                <input type="submit" value="Enter">
+            </div>
+        </form>
+        <br>
+
+        <span class="mystery" id="joyful"></span>
+        <span class="mystery" id="luminous"></span>
+        <span class="mystery" id="sorrowful"></span>
+        <span class="mystery" id="glorious"></span>
+    </div>
+    <br>
+
+
+    <script>
+        window.onscroll = function () { navStick() };
+
+        /*Begin nav declarations*/
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+        /*End nav declarations*/
+
+        /*Begin nav function calls*/
+        function navStick() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+        /*End nav function calls*/
+
+        // Start of visibility calls
+        urlp=[];
+        u=location.search.replace("?","").split("&").forEach(function(d){e=d.split("=");if(urlp[e[0]]==undefined){urlp[e[0]]=e[1]}else{urlp[e[0]]=urlp[e[0]]+" "+e[1]}});
+        document.getElementById(urlp["version"]).checked = true ;
+        if (urlp["mystery"]!=undefined){
+            var aMysteries = urlp["mystery"].split(" ");
+        }
+
+        function fillMystery(sMystery,sVersion) {
+            var vMystery = document.getElementById(sMystery);
+            for (n=1; n<=5; n++){
+                vMystery.innerHTML = vMystery.innerHTML + "<button class=\"button dropdown-master\"><h3>"+ master[sMystery][n]+"</h3></button>"
+                var vDrop = "<div class=\"dropdown-slave\">"
+                if (urlp["CCC"]=="on") {
+                    vDrop = vDrop + "<span class=\"catechism\">" + catechism[sMystery][n] + "</span>"
+                }
+                if (urlp["montfort"]=="on") {
+                    vDrop = vDrop + "<span class=\"montfort\">" + montfort[sMystery][n] + "</span>"
+                }
+                vDrop = vDrop + "<span class=\"father\">" + tFather + "</span>"
+                if (sVersion!="trad"||urlp["mary"]=="on") {
+                    for (o=1; o<=10; o++){
+                        if (sVersion!="trad"){
+                            vDrop = vDrop + "<span class=\"verse\">" + o + ". " + eval(sVersion)[sMystery][n][o] + "</span>";
+                        };
+                        if (urlp["mary"]=="on"){
+                            vDrop = vDrop + "<span class=\"mary\">" + tMary + "</span>";
+                        }
+                    }
+                }
+                vDrop = vDrop + "</div><br>"
+                vMystery.innerHTML = vMystery.innerHTML + vDrop
+            }
+        }
+
+        function fMystery () {
+            for (i=0; i<aMysteries.length; i++) {
+                switch (aMysteries[i]) {
+                    case "joyful":
+                        document.getElementById("check-joyful").checked = true
+                        fillMystery(aMysteries[i], urlp["version"])
+                        break;
+                    
+                    case "sorrowful":
+                        document.getElementById("check-sorrowful").checked = true
+                        fillMystery(aMysteries[i], urlp["version"])
+                        break;
+
+                    case "glorious":
+                        document.getElementById("check-glorious").checked = true
+                        fillMystery(aMysteries[i], urlp["version"])
+                        break;
+
+                    default :
+                        break;
+                }
+            }
+        }
+
+        function version() {
+            if (urlp["version"] != "trad") {
+                var version = urlp["version"]
+                var mysteries = document.getElementsByClassName("mystery");
+
+                for (i=0; i<mysteries.length; i++) {
+                    var verses = mysteries[i].getElementsByClassName("verse");
+
+                    for (a=0; a<verses.length; a++) {
+                        verses[a].style.visibility = "inherit"
+                        verses[a].style.marginBottom = "1em"
+                        verses[a].style.padding = "0.5em 1.5em"
+                    }
+                }
+            }
+        }
+        
+        function fMary() {
+            if (urlp["mary"] == "on") {
+                var aMary = document.getElementsByClassName("mary")
+                document.getElementById("mary-on").checked = true
+
+                for (i=0; i<aMary.length; i++) {
+                    aMary[i].innerHTML = tMary;
+                    aMary[i].style.visibility = "inherit"
+                    aMary[i].style.marginBottom = "1em"
+                    aMary[i].style.padding = "0.5em 1.5em"
+                }
+            }
+            else {
+                document.getElementById("mary-off").checked = true
+            }
+        }
+
+        function fCatechism() {
+            if (urlp["CCC"] == "on") {
+                var aCCC = document.getElementsByClassName("catechism")
+                document.getElementById("CCC-on").checked = true    
+
+                for (i=0; i<aCCC.length; i++) { 
+                    aCCC[i].style.visibility = "inherit"
+                    aCCC[i].style.marginBottom = "1em"
+                    aCCC[i].style.padding = "0.5em 1.5em"
+                }
+            }
+            else {
+                document.getElementById("CCC-off").checked = true
+            }
+        }
+        
+
+        fMystery();
+        version()
+        fCatechism()
+        fMary()
+        // End of visibility calls
+
+                /*Begin collapsable container declarations*/
+                var coll = document.getElementsByClassName("dropdown-master");
+        var i;
+        /*End collapsable container declarations*/
+
+        /*Begin collapsable function calls*/
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("dropdown-active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.overflow = "hidden";
+                    content.style.visibility = "hidden";
+                    content.style.maxHeight = null;
+                    content.style.height = "0px";
+                    content.style.padding = "0px";
+                } else {
+                    content.style.maxHeight = "inherit";
+                    content.style.height = "inherit";
+                    content.style.visibility = "visible ";
+                    content.style.overflow = "visible";
+                    content.style.padding = "1em 1em 0 1em";
+                }
+            });
+        }
+        /*End collapsable function calls*/
+    </script>
+</body>
+
+</html>
