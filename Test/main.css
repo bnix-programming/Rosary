@@ -108,7 +108,7 @@
 
         .button {
             background-color: #b11111;
-            border-width: 2px;
+            border-width: 0.15em;
             align-self: center;
             width: 100%;
             text-align: left;
