@@ -349,7 +349,10 @@ span {
 }
 
 .inner-hr {
-    border: solid 1px;
+    border: solid 1px;  
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
     color: var(--pray-hr);
 }
     /* End of body */
