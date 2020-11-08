@@ -86,6 +86,13 @@ span {
     color: var(--span-text);
 }
 
+hr {
+    border: solid 1px;  
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
 #header-text {
     color: var(--header-text);
     padding: 15px;
