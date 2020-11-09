@@ -89,6 +89,7 @@ function fClosing() {
         vDrop = vDrop + "<span class=\"prayer\">" + tClLit + "</span>"
     }
     vDrop = vDrop + "<span class=\"prayer\">" + tSignS + "</span>"
+    vDrop = vDrop + "<span class=\"prayer\">" + tReign + "</span>"
     vDrop = vDrop + "</div><br>"
     vClose.innerHTML = vClose.innerHTML + vDrop
 }
