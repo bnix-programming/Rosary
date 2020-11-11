@@ -207,7 +207,7 @@ var DRA = {
     sorrowful:{
         1: {
             1:  "&ldquo;For all have sinned, and do need the glory of God.&rdquo; (Rom. 3:23)",
-            2:  "&ldquo;We know that we are of God, and the whole world is seated in wickedness.&rdquo; (1 Jn. 5:19)",
+            2:  "&ldquo;Be penitent, therefore, and be converted, that your sins may be blotted out.&rdquo; (Acts 3:19)",
             3:  "&ldquo;Whosoever committeth sin committeth also iniquity; and sin is iniquity.&rdquo; (1 Jn. 3:4)",
             4:  "&ldquo;To him therefore who knoweth to do good, and doth it not, to him it is sin.&rdquo; (Jam. 4:17)",
             5:  "&ldquo;Because I was silent my bones grew old; whilst I cried out all the day long.&rdquo; (Ps. 31:3)",
