@@ -190,7 +190,7 @@ for (i = 0; i < coll.length; i++) {
     aClose[i].addEventListener("click", function(){
         var vSlave = this.parentNode;
         this.parentNode.previousSibling.classList.toggle("dropdown-active");
-        this.parentNode.previousSibling.classList.toggle("dropdown-read");
+        this.parentNode.previousSibling.classList.add("dropdown-read");
         if (vSlave.style.maxHeight) {
             vSlave.style.overflow = "hidden";
             vSlave.style.visibility = "hidden";
