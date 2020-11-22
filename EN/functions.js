@@ -26,6 +26,7 @@ function fOpening() {
     vDrop = vDrop + "<span class=\"mary\">Hail Mary (Hope)<br><hr class=\"inner-hr\">" + tMary + "</span>";
     vDrop = vDrop + "<span class=\"mary\">Hail Mary (Charity)<br><hr class=\"inner-hr\">" + tMary + "</span>";
     vDrop = vDrop + "<span class=\"mary\">" + tGlory + "</span>";
+    vDrop = vDrop + "<span class=\"close\"><div>X</div></span>";
     vDrop = vDrop + "</div><br>"
     vOpen.innerHTML = vOpen.innerHTML + vDrop
 }
@@ -64,6 +65,7 @@ function fillMystery(sMystery,sVersion) {
         if (urlp["montfort"]=="on"){
             vDrop = vDrop + "<span class=\"montfort\">" + master["montfort"]["cHeader"] + master["montfort"][sMystery]["closing"][n] + "</span>"
         }
+        vDrop = vDrop + "<span class=\"close\"><div>X</div></span>";
         vDrop = vDrop + "</div><br>"
         vMystery.innerHTML = vMystery.innerHTML + vDrop
         vDrop = ''
@@ -90,6 +92,7 @@ function fClosing() {
     }
     vDrop = vDrop + "<span class=\"prayer\">" + tSignS + "</span>"
     vDrop = vDrop + "<span class=\"prayer\">" + tReign + "</span>"
+    vDrop = vDrop + "<span class=\"close\"><div>X</div></span>";
     vDrop = vDrop + "</div><br>"
     vClose.innerHTML = vClose.innerHTML + vDrop
 }
@@ -158,7 +161,8 @@ fClosing();
 fMystery();
 
 /*Begin collapsable container declarations*/
-var coll = document.getElementsByClassName("dropdown-master");
+var coll   = document.getElementsByClassName("dropdown-master");
+var aClose = document.getElementsByClassName("close");
 var i;
 /*End collapsable container declarations*/
 
@@ -181,5 +185,19 @@ for (i = 0; i < coll.length; i++) {
             content.style.padding = "1em 1em 0 1em";
         }
     });
-}
+};
+
+for (c = 0; c < aClose.length; c++) {
+    aClose[c].addEventListener("click", function(){
+        var vSlave = this.parentNode;
+        this.parentNode.previousSibling.classList.toggle("dropdown-active");
+        if (vSlave.style.maxHeight) {
+            vSlave.style.overflow = "hidden";
+            vSlave.style.visibility = "hidden";
+            vSlave.style.maxHeight = null;
+            vSlave.style.height = "0px";
+            vSlave.style.padding = "0px";
+        }
+    });
+};
 /*End collapsable function calls*/

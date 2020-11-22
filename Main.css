@@ -45,6 +45,10 @@
     --resp-text:    #c2955b;
 
     --pray-hr:      #630909;
+
+    --close:        #630909;
+    --close-hover:  #8a1212;
+    --close-text:   #ffffff;
 }
 
 abbr {
@@ -309,11 +313,11 @@ hr {
 }
 
 
-.catechism, .montfort, .mary, .prayer, .verse {
+.catechism, .montfort, .mary, .prayer, .verse, .close {
     border-radius: 0.5em;
 }
 
-.catechism, .montfort, .mary {
+.catechism, .montfort, .mary, .close {
     text-align: justify;
     background-color: var(--pray-bg);
     visibility: inherit;
@@ -354,6 +358,22 @@ hr {
 .instruction {
     text-align: justify;
     color: var(--resp-text);
+}
+
+.close {
+    display: flex;
+    background-color: var(--close);
+    justify-content: center;
+    align-content: center;
+}
+
+.close div {
+    display: flexbox;
+    color: var(--close-text);
+}
+
+.close:hover {
+    background-color: var(--close-hover);
 }
 
 .inner-hr {
