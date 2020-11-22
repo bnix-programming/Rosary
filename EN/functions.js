@@ -185,10 +185,9 @@ for (i = 0; i < coll.length; i++) {
             content.style.padding = "1em 1em 0 1em";
         }
     });
-};
 
-for (c = 0; c < aClose.length; c++) {
-    aClose[c].addEventListener("click", function(){
+    //Toggles off the slave and the class when the close button is pressed
+    aClose[i].addEventListener("click", function(){
         var vSlave = this.parentNode;
         this.parentNode.previousSibling.classList.toggle("dropdown-active");
         if (vSlave.style.maxHeight) {
