@@ -31,6 +31,7 @@
     --drop-hover:   #ecd588;
     /* --drop-slave:   #7c0707; */
     --drop-slave:   #94613598;
+    --drop-read:    #bd5738;
 
     /* --pray-bg:      #5bb4ab; */
     --pray-bg:      #f3e5b6;
@@ -312,6 +313,9 @@ hr {
     height: 0;
 }
 
+.dropdown-read {
+    background-color: var(--drop-read);
+}
 
 .catechism, .montfort, .mary, .prayer, .verse, .close {
     border-radius: 0.5em;
