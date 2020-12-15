@@ -4,7 +4,7 @@ var tFatima = "Fatima Gebet<br><hr class=\"inner-hr\"><span>O mein Jesus verzeih
 var tFlame  = "Flamme der Liebe<br><hr class=\"inner-hr\"><span>Mutter Gottes, verbreite die wirkung der gnade deiner flamme der Liebe &uuml;ber die ganze menschheit. Jetzt und zur stunde unseres todes.</span>";
 var tJesus  = "Jesu Gebet<br><hr class=\"inner-hr\"><span>Herr Jesus Christus, sohn Gottes, erbarme dich unser s&uuml;nder.</span>";
 var tGlory  = "Ehre Sei Dem Vater<br><hr class=\"inner-hr\"><span>Ehre sei dem Vater und dem Sohn und dem heiligen Geist...</span><br><span class=\"responsory\">...wie es war im Anfang so auch jetzt und alle Zeit in Ewigkeit. Amen</span>";
-var tSignL  = "Kreuzzeichen (Lange Version)<br><hr class=\"inner-hr\"><span><span class=\"instruction\">Mache mit der rechten Hand ein kleines Kreuz auf deiner Stirn, ein weiteres auf den Lippen und ein weiteres auf deiner Brust mit deinem Daumen, während du sagst:</span><br>Befreie uns, O Herr, durch das Zeichen des heiligen Kreuzes von allem, was b&ouml;se ist.<br><br><span class=\"instruction\">Mache wieder mit der rechten Hand ein gro&szlig;es Kreuz und ber&uuml;hre deine Stirn, Brust, linke Schulter bis zur rechten Schulter mit deinen Fingerspitzen, während du sagst:</span><br>Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
+var tSignL  = "Kreuzzeichen (Lange Version)<br><hr class=\"inner-hr\"><span><span class=\"instruction\">Mache mit der rechten Hand ein kleines Kreuz auf deiner Stirn, ein weiteres auf den Lippen und ein weiteres auf deiner Brust mit deinem Daumen, w&auml;hrend du sagst:</span><br>Befreie uns, O Herr, durch das Zeichen des heiligen Kreuzes von allem, was b&ouml;se ist.<br><br><span class=\"instruction\">Mache wieder mit der rechten Hand ein gro&szlig;es Kreuz und ber&uuml;hre deine Stirn, Brust, linke Schulter bis zur rechten Schulter mit deinen Fingerspitzen, w&auml;hrend du sagst:</span><br>Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
 var tSignS  = "Kreuzzeichen<br><hr class=\"inner-hr\"><span>Im namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
 var tCreed  = "Apostolisches Glaubensbekenntnis<br><hr class=\"inner-hr\"><span>Ich glaube an Gott, den Vater, den Allm&auml;chtigen, den Sch&ouml;pfer des Himmels und der Erde, und an Jesus Cristus, seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von den Toten, aufgefahren in den Himmel; er sitzt zur Rechten Gottes, des allm&auml;chtigen Vaters; von dort wird er kommen, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katolische Kirche, Gemeinschaft der Heiligen, Vergebung der S&uuml;nde, Auferstehung der Toten und das ewige Leben. Amen.</span>";
 var tOpLit  = "Stundengebet<br><hr class=\"inner-hr\"><span>Herr, &ouml;ffne meine Lippen....<br><span class=\"responsory\">...Damit mein Mund dein Lob verk&uuml;nde.</span><br><br>O Gott, komm mir zu Hilfe....<br><span class=\"responsory\">... Herr, eile mir zu helfen.</span></span>";
@@ -146,60 +146,60 @@ var focus = {
         1: {
             1:  "Die Zeit der Menschwerdung Gottes ist gekommen.",
             2:  "Aus allen Frauen wurde Maria seit ihrer Geburt von Gott auserkoren, die Mutter des fleischgewordenes Wortes zu sein.",
-            3:  "Der Engel Gabriel kündigt sich an mit den Worten: &ldquo;Gegrüßest seist du Maria, der Herr ist mit dir.&rdquo;",
-            4:  "Maria wundert sich über diese Begrüßung",
-            5:  "Der Engel versichert ihr: &ldquo;Fürchte dich nicht... du wirst einen Sohn in deinem Leibe empfangen.&rdquo;",
-            6:  "Maria ist beunruhigt, da sie ein Gelübde der Jungfräulichkeit abgelegt hat.",
+            3:  "Der Engel Gabriel k&uuml;ndigt sich an mit den Worten: &ldquo;Gegr&uuml;&szlig;est seist du Maria, der Herr ist mit dir.&rdquo;",
+            4:  "Maria wundert sich &uuml;ber diese Begr&uuml;&szlig;ung",
+            5:  "Der Engel versichert ihr: &ldquo;F&uuml;rchte dich nicht... du wirst einen Sohn in deinem Leibe empfangen.&rdquo;",
+            6:  "Maria ist beunruhigt, da sie ein Gel&uuml;bde der Jungfr&auml;ulichkeit abgelegt hat.",
             7:  "Der Engel antwortet ihr, das sie bei der Kraft des Heiligen Geistes empfangen wird und ihr Sohn wird der Sohn Gottes sein.",
             8:  "Die Gestalt erwartet Marias Zustimmung.",
             9:  "Maria antwortet: &ldquo;Siehe, die Magd des Herrn. Sei es mir nach deinem Wort getan.&rdquo;",
             10: "Das Wort wurde Fleisch gemacht und hat unter uns gelebt."
         },
         2: {
-            1:  "Marias Cousine Elizabeth hat in ihrem Alter einen Sohn gezeugt... denn mit Gott ist nichts unmöglich.",
-            2:  "Nächstenliebe drängt Maria, sich zu beeilen, Elizabeth in der Stunde ihrer Not zu besuchen.",
-            3:  "Die Reise zu Elizabeths Haus dauert ungefähr 4 oder 5 Tage.",
-            4:  "Obwohl die Reise lang und beschwerlich ist, Maria ist freudig, denn sie trägt das fleischgewordene Wort mit sich.",
-            5:  "Bei Marias Gruß wird Johannes der Täufer im Leibe seiner Mutter geheiligt.",
+            1:  "Marias Cousine Elizabeth hat in ihrem Alter einen Sohn gezeugt... denn mit Gott ist nichts unm&ouml;glich.",
+            2:  "N&auml;chstenliebe dr&auml;ngt Maria, sich zu beeilen, Elizabeth in der Stunde ihrer Not zu besuchen.",
+            3:  "Die Reise zu Elizabeths Haus dauert ungef&auml;hr 4 oder 5 Tage.",
+            4:  "Obwohl die Reise lang und beschwerlich ist, Maria ist freudig, denn sie tr&auml;gt das fleischgewordene Wort mit sich.",
+            5:  "Bei Marias Gru&szlig; wird Johannes der T&auml;ufer im Leibe seiner Mutter geheiligt.",
             6:  "Elizabeth ruft aus: &ldquo;Gesegnet bist du unter den Frauen, und gesegnet ist die Frucht deines Leibes.&rdquo;",
             7:  "&ldquo;Wie habe ich es verdient, dass die Mutter meines Herrn zu mir kommt?&rdquo;",
-            8:  "&ldquo;Gesegnet ist sie, die glaubte, dass sich die Versprechen des Herrn an sie erfüllen würden.&rdquo;",
-            9:  "Maria antwortet: &ldquo;Meine Seele verkündet die Herrlichkeit des Herrn, und mein Geist findet Freude in Gott, meinem Retter.&rdquo;",
-            10: "Maria unterstützst ihre Cousine drei Monate lang in aller Demut bis zur Geburt von Johannes dem Täufer"
+            8:  "&ldquo;Gesegnet ist sie, die glaubte, dass sich die Versprechen des Herrn an sie erf&uuml;llen w&uuml;rden.&rdquo;",
+            9:  "Maria antwortet: &ldquo;Meine Seele verk&uuml;ndet die Herrlichkeit des Herrn, und mein Geist findet Freude in Gott, meinem Retter.&rdquo;",
+            10: "Maria unterst&uuml;tzst ihre Cousine drei Monate lang in aller Demut bis zur Geburt von Johannes dem T&auml;ufer"
         },
         3: {
-            1:  "Josef und Maria gehen nach Bethlehem, um dem Erlass von Cäsar Augustus nachzukommen",
-            2:  "Die Stunde, in der Maria gebären wird, ist nahe, aber im Gasthaus ist kein Platz mehr.",
-            3:  "In der Stille der Nacht wird der Erretter in einer Höhle geboren, Maria bleibt eine Jungfrau.",
-            4:  "Sie hüllt ihn in Windeln und legt ihn in eine Krippe.",
-            5:  "In unbeschreiblicher Freude legt Maria die Blume ihrer Jungfräulichkeit an ihrem Busen.",
-            6:  "Jesus betritt die Welt in Armut, um die Lektion der Loslösung von irdischen Dingen zu lehren.",
-            7:  "Der Engel verkündet zu den Hirten: &ldquo;Heute ist euch in der Stadt David ein Retter geboren, Christus der Herr.&rdquo;",
-            8:  "Der Engelschor singt: &ldquo;Ehre sei dem höchsten Gott und Friede seinem Volk auf Erden.&rdquo;",
+            1:  "Josef und Maria gehen nach Bethlehem, um dem Erlass von C&auml;sar Augustus nachzukommen",
+            2:  "Die Stunde, in der Maria geb&auml;ren wird, ist nahe, aber im Gasthaus ist kein Platz mehr.",
+            3:  "In der Stille der Nacht wird der Erretter in einer H&ouml;hle geboren, Maria bleibt eine Jungfrau.",
+            4:  "Sie h&uuml;llt ihn in Windeln und legt ihn in eine Krippe.",
+            5:  "In unbeschreiblicher Freude legt Maria die Blume ihrer Jungfr&auml;ulichkeit an ihrem Busen.",
+            6:  "Jesus betritt die Welt in Armut, um die Lektion der Losl&ouml;sung von irdischen Dingen zu lehren.",
+            7:  "Der Engel verk&uuml;ndet zu den Hirten: &ldquo;Heute ist euch in der Stadt David ein Retter geboren, Christus der Herr.&rdquo;",
+            8:  "Der Engelschor singt: &ldquo;Ehre sei dem h&ouml;chsten Gott und Friede seinem Volk auf Erden.&rdquo;",
             9:  "Die Hirten kommen in den Stall, um dem Jesuskind zu huldigen.",
-            10: "Die Könige kommen, um das Heilige Kind zu verehren und ihm Geschenke anzubieten."
+            10: "Die K&ouml;nige kommen, um das Heilige Kind zu verehren und ihm Geschenke anzubieten."
         },
         4: {
             1:  "Unter Beachtung der Gesetze Moses bringen sie Jesus in den Tempel, um ihn dem Herrn vorzustellen.",
-            2:  "Nach dem Gesetz sollte das erstgeborene männliche Kind jeder Familie zu dem Herrn geweiht werden.",
-            3:  "Maria bietet dem Vater ihren Sohn an und befreit ihn dann zu dem von den Armen gezahlten Preis zurück.",
+            2:  "Nach dem Gesetz sollte das erstgeborene m&auml;nnliche Kind jeder Familie zu dem Herrn geweiht werden.",
+            3:  "Maria bietet dem Vater ihren Sohn an und befreit ihn dann zu dem von den Armen gezahlten Preis zur&uuml;ck.",
             4:  "Jesus unterliegt nicht dem Gesetz Mose, aber um Gehorsam zu lehren, unterwirft er sich.",
             5:  "Maria unterliegt nicht dem Gesetz der Reinigung, aber in Demut unterwirft sie sich.",
-            6:  "Gott hatte Simeon offenbart, dass er den Tod nicht sehen würde, bis er den Messias gesehen hatte.",
-            7:  "Er erkennt das Kind und betet: &ldquo;Jetzt kannst du deinen Diener in Frieden entlassen. Du hast dein Wort erfüllt.&rdquo;",
+            6:  "Gott hatte Simeon offenbart, dass er den Tod nicht sehen w&uuml;rde, bis er den Messias gesehen hatte.",
+            7:  "Er erkennt das Kind und betet: &ldquo;Jetzt kannst du deinen Diener in Frieden entlassen. Du hast dein Wort erf&uuml;llt.&rdquo;",
             8:  "&ldquo;Dieses Kind ist dazu bestimmt, der Untergang und Aufstieg vieler in Israel zu sein, ein Zeichen, dem sich viele widersetzen werden.&rdquo;",
             9:  "Und Maria Simeon offenbart: &ldquo;Und deine eigene Seele wird von einem Schwert durchbohren werden.&rdquo;",
-            10: "Nachdem sie alle gesetzlichen Bestimmungen erfüllt haben, kehren sie nach Nazareth zurück."
+            10: "Nachdem sie alle gesetzlichen Bestimmungen erf&uuml;llt haben, kehren sie nach Nazareth zur&uuml;ck."
         },
         5: {
-            1:  "Wenn Jesus zwölf Jahre alt ist, geht er mit seinen Eltern zum Passahfest nach Jerusalem.",
-            2:  "Nach dem Passahfest machen sich Joseph und Maria unwissentlich ohne Jesus auf den Weg zurück nach Nazareth.",
+            1:  "Wenn Jesus zw&ouml;lf Jahre alt ist, geht er mit seinen Eltern zum Passahfest nach Jerusalem.",
+            2:  "Nach dem Passahfest machen sich Joseph und Maria unwissentlich ohne Jesus auf den Weg zur&uuml;ck nach Nazareth.",
             3:  "Am Ende des ersten Tages ihrer Resie entdecken sie, dass Jesus fehlt.",
-            4:  "Seine Eltern kehren sofort zurück und suchen ihn.",
-            5:  "Dieser Verlust verursacht Trauer und Angst in den Herzen von Maria und Josef, die wir nicht verstehen können",
-            6:  "Am dritten Tag finden sie Jesus im Tempel unter den Ärzten, die über seine Weisheit erstaunt sind.",
+            4:  "Seine Eltern kehren sofort zur&uuml;ck und suchen ihn.",
+            5:  "Dieser Verlust verursacht Trauer und Angst in den Herzen von Maria und Josef, die wir nicht verstehen k&ouml;nnen",
+            6:  "Am dritten Tag finden sie Jesus im Tempel unter den &Auml;rzten, die &uuml;ber seine Weisheit erstaunt sind.",
             7:  "Maria: &ldquo;Sohn, warum hast du uns das angetan? Dein Vater und ich haben dich in Trauer gesucht.&rdquo;",
-            8:  "Jesu: &ldquo;Warum hast du nach mir gesucht? Wusstest du nicht, dass ich mich um das Geschäft meines Vaters kümmern muss?&rdquo;",
+            8:  "Jesu: &ldquo;Warum hast du nach mir gesucht? Wusstest du nicht, dass ich mich um das Gesch&auml;ft meines Vaters k&uuml;mmern muss?&rdquo;",
             9:  "Jesus geht mit ihnen nach Nazareth und unterliegt ihnen.",
             10: "Maria verbirgt all diese Dinge in ihrem Herzen."
         }
