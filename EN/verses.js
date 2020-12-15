@@ -518,3 +518,14 @@ var focus = {
         }
     }
 }
+
+var extras = {
+    titleClosing: "Closing prayers",
+    titleOpening: "Opening Prayers",
+    titleMary: {
+        normal: "Hail Mary",
+        faith: "Hail Mary (Faith)",
+        hope: "Hail Mary (Hope)",
+        charity: "Hail Mary (Charity)"
+    }
+}

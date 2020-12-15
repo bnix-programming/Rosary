@@ -9,7 +9,7 @@ function fOpening() {
     var vOpen = document.getElementById("opening");
     vDrop = ''
 
-    vDrop = vDrop + "<button class=\"button dropdown-master\"><h3>Opening Prayers</h3></button>"
+    vDrop = vDrop + "<button class=\"button dropdown-master\"><h3>" + extras["titleOpening"] + "</h3></button>"
     vDrop = vDrop + "<div class=\"dropdown-slave\">"
     vDrop = vDrop + "<span class=\"prayer\">" + tSignL + "</span>"
     if (urlp["extras"]=="on"){
@@ -22,9 +22,9 @@ function fOpening() {
     };
     vDrop = vDrop + "<span class=\"prayer\">" + tCreed + "</span>"
     vDrop = vDrop + "<span class=\"mary\">" + tFather + "</span>";
-    vDrop = vDrop + "<span class=\"mary\">Hail Mary (Faith)<br><hr class=\"inner-hr\">" + tMary + "</span>";
-    vDrop = vDrop + "<span class=\"mary\">Hail Mary (Hope)<br><hr class=\"inner-hr\">" + tMary + "</span>";
-    vDrop = vDrop + "<span class=\"mary\">Hail Mary (Charity)<br><hr class=\"inner-hr\">" + tMary + "</span>";
+    vDrop = vDrop + "<span class=\"mary\">" + extras["titleMary"]["faith"]   + "<br><hr class=\"inner-hr\">" + tMary + "</span>";
+    vDrop = vDrop + "<span class=\"mary\">" + extras["titleMary"]["hope"]    + "<br><hr class=\"inner-hr\">" + tMary + "</span>";
+    vDrop = vDrop + "<span class=\"mary\">" + extras["titleMary"]["charity"] + "<br><hr class=\"inner-hr\">" + tMary + "</span>";
     vDrop = vDrop + "<span class=\"mary\">" + tGlory + "</span>";
     vDrop = vDrop + "<span class=\"close\"><div>X</div></span>";
     vDrop = vDrop + "</div><br>"
@@ -52,7 +52,7 @@ function fillMystery(sMystery,sVersion) {
                     vDrop = vDrop + "<span class=\"verse\">" + o + ". " + eval(sVersion)[sMystery][n][o] + "</span>";
                 };
                 if (urlp["mary"]=="on"){
-                    vDrop = vDrop + "<span class=\"mary\">" + "Hail Mary<br><hr class=\"inner-hr\">" + tMary + "</span>";
+                    vDrop = vDrop + "<span class=\"mary\">" + extras["titleMary"]["normal"] + "<br><hr class=\"inner-hr\">" + tMary + "</span>";
                 }
             }
         }
@@ -77,7 +77,7 @@ function fClosing() {
     var vClose = document.getElementById("closing");
     vDrop = '<hr><br>'
 
-    vDrop = vDrop + "<button class=\"button dropdown-master\"><h3>Closing prayers</h3></button>"
+    vDrop = vDrop + "<button class=\"button dropdown-master\"><h3>" + extras["titleClosing"] + "</h3></button>"
     vDrop = vDrop + "<div class=\"dropdown-slave\">"
     if (urlp["extras"]=="on"){
         vDrop = vDrop + "<span class=\"prayer\">" + tThank + "</span>"
