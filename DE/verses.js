@@ -4,7 +4,7 @@ var tFatima = "Fatima Gebet<br><hr class=\"inner-hr\"><span>O mein Jesus verzeih
 var tFlame  = "Flamme der Liebe<br><hr class=\"inner-hr\"><span>Mutter Gottes, verbreite die wirkung der gnade deiner flamme der Liebe &uuml;ber die ganze menschheit. Jetzt und zur stunde unseres todes.</span>";
 var tJesus  = "Jesu Gebet<br><hr class=\"inner-hr\"><span>Herr Jesus Christus, sohn Gottes, erbarme dich unser s&uuml;nder.</span>";
 var tGlory  = "Ehre Sei Dem Vater<br><hr class=\"inner-hr\"><span>Ehre sei dem Vater und dem Sohn und dem heiligen Geist...</span><br><span class=\"responsory\">...wie es war im Anfang so auch jetzt und alle Zeit in Ewigkeit. Amen</span>";
-var tSignL  = "Kreuzzeichen (lange version)<br><hr class=\"inner-hr\"><span><span class=\"instruction\">Mache mit der rechten Hand ein kleines Kreuz auf deiner Stirn, ein weiteres auf den Lippen und ein weiteres auf deiner Brust mit deinem Daumen, während du sagst:</span><br>Befreie uns, O Herr, durch das Zeichen des heiligen Kreuzes von allem, was b&ouml;se ist.<br><br><span class=\"instruction\">Mache wieder mit der rechten Hand ein gro&szlig;es Kreuz und ber&uuml;hre deine Stirn, Brust, linke Schulter bis zur rechten Schulter mit deinen Fingerspitzen, während du sagst:</span><br>Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
+var tSignL  = "Kreuzzeichen (Lange Version)<br><hr class=\"inner-hr\"><span><span class=\"instruction\">Mache mit der rechten Hand ein kleines Kreuz auf deiner Stirn, ein weiteres auf den Lippen und ein weiteres auf deiner Brust mit deinem Daumen, während du sagst:</span><br>Befreie uns, O Herr, durch das Zeichen des heiligen Kreuzes von allem, was b&ouml;se ist.<br><br><span class=\"instruction\">Mache wieder mit der rechten Hand ein gro&szlig;es Kreuz und ber&uuml;hre deine Stirn, Brust, linke Schulter bis zur rechten Schulter mit deinen Fingerspitzen, während du sagst:</span><br>Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
 var tSignS  = "Kreuzzeichen<br><hr class=\"inner-hr\"><span>Im namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.</span>";
 var tCreed  = "Apostolisches Glaubensbekenntnis<br><hr class=\"inner-hr\"><span>Ich glaube an Gott, den Vater, den Allm&auml;chtigen, den Sch&ouml;pfer des Himmels und der Erde, und an Jesus Cristus, seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von den Toten, aufgefahren in den Himmel; er sitzt zur Rechten Gottes, des allm&auml;chtigen Vaters; von dort wird er kommen, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katolische Kirche, Gemeinschaft der Heiligen, Vergebung der S&uuml;nde, Auferstehung der Toten und das ewige Leben. Amen.</span>";
 var tOpLit  = "Stundengebet<br><hr class=\"inner-hr\"><span>Herr, &ouml;ffne meine Lippen....<br><span class=\"responsory\">...Damit mein Mund dein Lob verk&uuml;nde.</span><br><br>O Gott, komm mir zu Hilfe....<br><span class=\"responsory\">... Herr, eile mir zu helfen.</span></span>";
@@ -331,7 +331,7 @@ var focus = {
 }
 
 var extras = {
-    titleClosing: "Gebete Abschlu&szlig;gebete",
+    titleClosing: "Abschlu&szlig;gebete",
     titleOpening: "&Ouml;ffnungsgebete",
     titleMary: {
         normal:  "Ave Maria",
