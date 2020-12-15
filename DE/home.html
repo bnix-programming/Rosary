@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MBV-D: Rosary Guide - Home</title>
+    <link rel="stylesheet" type="text/css" href="../Main.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.png">
+</head>
+
+<body>
+    <h1 class="header" id="header-text">
+        MBV&#39;s Discord: Rosary guide
+    </h1>
+    <div id="nav">
+        <a class="active" href="home.html">Home</a>
+        <a href="rosary-guide.html">Rosary guide</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="body">
+        <h4 class="citation-block">
+            <p class="citation-text">“There is no saint without a past,<br>
+                no sinner without a future.”</p>
+            -Saint Augustine
+        </h4>
+        <hr class="citation-break">
+        <div>
+
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function () { stick() };
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function stick() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+
+        function weekDay() {
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            var n = weekday[d.getDay(0)];
+            document.getElementById("week-day").innerHTML = n;
+        } 
+    </script>
+</body>
+
+</html>
