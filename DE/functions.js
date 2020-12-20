@@ -56,6 +56,9 @@ function fillMystery(sMystery,sVersion) {
                 }
             }
         }
+        if (sVersion=="trad") {
+            vDrop = vDrop + "<span class=\"verse\">" + extras["titleMary"]["normal"] + " x10<br><hr class=\"inner-hr\">" + tMary + "</span>";
+        }
         vDrop = vDrop + "<span class=\"prayer\">" + tGlory + "</span>"
         vDrop = vDrop + "<span class=\"prayer\">" + tFatima + "</span>" 
         if (urlp["extras"]=="on"){
