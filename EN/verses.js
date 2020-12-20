@@ -286,7 +286,7 @@ var DRA = {
             4:  "&ldquo;For the end of the law is Christ, unto justice to every one that believeth.&rdquo; (Rom. 10:4)",
             5:  "&ldquo;And they shall bring the glory and honour of the nations into it.&rdquo; (Rev. 21:26)",
             6:  "&ldquo;Do not therefore lose your confidence, which hath a great reward.&rdquo; (Heb. 10:35)",
-            7:  "&ldquo;You shall seek me, and shall find me: when you shall seek me with all your heart.&rdquo; (Jer. 19:13)",
+            7:  "&ldquo;You shall seek me, and shall find me: when you shall seek me with all your heart.&rdquo; (Jer. 29:13)",
             8:  "&ldquo;In that day you shall know, that I am in my Father, and you in me, and I in you.&rdquo; (Jn. 14:20)",
             9:  "&ldquo;That we may be unto the praise of his glory, we who before hoped Christ:&rdquo; (Eph. 1:12)",
             10: "&ldquo;Receiving the end of your faith, even the salvation of your souls.&rdquo; (1 Pt. 1:9)"
