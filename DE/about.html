@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>MBV-D: Rosenkranzführer</title>
-    <link rel="stylesheet" type="text/css" href="../Main.css" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../icon.png">
-</head>
+    <head>
+        <title>MBV-D: Rosenkranzführer - Über</title>
+        <link rel="stylesheet" type="text/css" href="../Main.css" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../icon.png">
+    </head>
 
-<body>
-    <h1 class="header" id="header-text">
-        MBV&#39;s Rosenkranzführer
-    </h1>
-    <div id="nav">
-        <a href="home.html">Ursprung</a>
-        <a href="rosary-guide.html">Rosenkranzführer</a>
-        <a href="changelog.html">Änderungsprotokoll</a>
-        <a class="active" href="about.html">Über</a>
-    </div>
-    <div class="body">
-        <h2>
-            This is a web application with the purpose of making the rosary more accessible to newcomers, recent
-            converts and those who are coming back to the faith.
-        </h2>
-    </div>
+    <body>
+        <h1 class="header" id="header-text">
+            MBV&#39;s Rosenkranzführer
+            <form id="langForm" onsubmit="fLang(this, '/about.html')">
+                <select name="lang" id="lang">
+                    <option value="DE">Deutche</option>
+                    <option value="EN">English</option>
+                    <option value="PT">Português</option>
+                    <option value="LA">Lingua Latina</option>
+                </select>
+                <input type="submit" value="Eingabe">
+            </form>
+        </h1>
+        <div id="nav">
+            <a href="home.html">Ursprung</a>
+            <a href="rosary-guide.html">Rosenkranzführer</a>
+            <a href="changelog.html">Änderungsprotokoll</a>
+            <a class="active" href="about.html">Über</a>
+        </div>
+        <div class="body">
+            <h2>
+                This is a web application with the purpose of making the rosary more accessible to newcomers, recent
+                converts and those who are coming back to the faith.
+            </h2>
+        </div>
+    </body>
 
-    <script>
-        window.onscroll = function () { myFunction() };
-        var nav = document.getElementById("nav");
-        var sticky = nav.offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                nav.classList.add("sticky");
-            } else {
-                nav.classList.remove("sticky");
-            }
-        }
-    </script>
-</body>
-
+    <script src="functions.js" type="text/javascript"></script>
+    <script src="nav.js" type="text/javascript"></script>
 </html>

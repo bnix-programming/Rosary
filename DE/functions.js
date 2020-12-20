@@ -163,6 +163,12 @@ fOpening();
 fClosing();
 fMystery();
 
+//Language selector declaration
+function fLang(oForm, vLoc) {
+    oLang = document.getElementById("lang");
+    oForm.action = "../" + oLang.value + vLoc;
+}
+
 /*Begin collapsable container declarations*/
 var coll   = document.getElementsByClassName("dropdown-master");
 var aClose = document.getElementsByClassName("close");
