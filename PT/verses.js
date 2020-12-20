@@ -73,7 +73,7 @@ var master = {
     },
     sorrowful: {
         1: "O Primeiro Mistério Doloroso: A Agonia (Contrição)",
-        2: "O Segundo Mistério Doloroso: A Flagelação (Mortification)",
+        2: "O Segundo Mistério Doloroso: A Flagelação (Mortificação)",
         3: "O Terceiro Mistério Doloroso: A Coroação (Coragem Moral)",
         4: "O Quarto Mistério Doloroso: A Subida ao Calvário (Paciência)",
         5: "O Quinto Mistério Doloroso: A Crucificação (Salvação)"
