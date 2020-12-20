@@ -38,13 +38,13 @@ function fillMystery(sMystery,sVersion) {
     for (n=1; n<=5; n++){
         vDrop = vDrop + "<button class=\"button dropdown-master\"><h3>"+ master[sMystery][n]+"</h3></button>"
         vDrop = vDrop + "<div class=\"dropdown-slave\">"
-        /* if (urlp["CCC"]=="on") {
+        if (urlp["CCC"]=="on") {
             vDrop = vDrop + "<span class=\"catechism\">" + catechism["header"] + catechism[sMystery][n] + "</span>"
-        } */
-        /* if (urlp["montfort"]=="on") {
+        }
+        if (urlp["montfort"]=="on") {
             vDrop = vDrop + "<span class=\"montfort\">" + master["montfort"]["oHeader"] + master["order"][cMont] + master["montfort"][sMystery]["opening"][n] + "</span>"
             cMont++
-        } */
+        }
         vDrop = vDrop + "<span class=\"prayer\">" + tFather + "</span>"
         if (sVersion!="trad"||urlp["mary"]=="on") {
             for (o=1; o<=10; o++){
@@ -87,9 +87,9 @@ function fClosing() {
     };
     vDrop = vDrop + "<span class=\"prayer\">" + tHHQ + "</span>"
     vDrop = vDrop + "<span class=\"prayer\">" + tFinal + "</span>"
-    /* if (urlp["montfort"]=="on"){
+    if (urlp["montfort"]=="on"){
         vDrop = vDrop + "<span class=\"prayer\">" + master["montfort"]["conclusion"] + "</span>"
-    }; */
+    };
     if (urlp["extras"]=="on"){
         vDrop = vDrop + "<span class=\"prayer\">" + tClLit + "</span>"
     }
