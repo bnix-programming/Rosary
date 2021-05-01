@@ -140,6 +140,7 @@ hr {
     flex-direction: column;
     padding: 16px;
     margin: 2% 10% 0 10%;
+    align-items: center;
 }
 
 .sticky {
